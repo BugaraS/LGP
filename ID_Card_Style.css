@@ -1,0 +1,48 @@
+
+.id-card {
+    max-width: 350px;
+    border: 1px solid #333;
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+}
+.id-card img.photo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.id-card table {
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.id-card table td {
+    padding: 4px 8px;
+}
+.qr img {
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+}
+.btn-group {
+    text-align: center;
+    margin-top: 20px;
+}
+.btn {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 0 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #1e88e5;
+    color: #fff;
+    font-weight: 600;
+}
+.btn:hover {
+    background-color: #1565c0;
+}
+.print-btn i, .back-btn i {
+    margin-right: 5px;
+}

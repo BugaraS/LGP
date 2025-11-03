@@ -1,0 +1,29 @@
+Options -Indexes
+RewriteEngine On
+
+# Allow access to existing files and folders
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Hide .php extension
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^/]+)/?$ $1.php [L]
+
+# Admin routes (all optional trailing slash)
+RewriteRule ^admin/?$ Admin_dashboard.php [L]
+RewriteRule ^add-user/?$ Addusers.php [L]
+RewriteRule ^staff/?$ Admin_staff_Registrations.php [L]
+RewriteRule ^students/?$ Admin_student_registrations.php [L]
+RewriteRule ^others/?$ Admin_Others_register.php [L]
+RewriteRule ^change-password/?$ change_password.php [L]
+RewriteRule ^logout/?$ logout.php [L]
+
+
+# User routes 
+RewriteRule ^user/?$ Userdashboard.php [L]
+
+RewriteRule ^staff/?$ Staff_registrations.php [L]
+RewriteRule ^students/?$ Student_registrations.php [L]
+RewriteRule ^others/?$ Others_register.php [L]
+RewriteRule ^change-password/?$ change_password.php [L]
+RewriteRule ^logout/?$ logout.php [L]

@@ -1,0 +1,12 @@
+<?php
+session_start();
+if ($_SESSION['role'] != 'user') {
+    header("Location: login.php");
+    exit;
+}
+echo "<h2>Welcome User, ".$_SESSION['username']."</h2>";
+?>
+<a href="register_form.php"> Register Form</a> |
+<a href="my_registrations.php"> My Registrations</a> |
+<a href="change_password.php">🔑 Change Password</a> |
+<a href="logout.php">Logout</a>

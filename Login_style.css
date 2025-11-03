@@ -1,0 +1,134 @@
+html, body {
+  height: 100%;
+  background: #7b777c;
+  color: #02010a;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main Section */
+.main-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0px;
+}
+
+/* Login Container */
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #cabfbf;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 40px;
+  max-width: 400px;
+  width: 100%;
+  gap: 50px;
+}
+
+/* Image */
+.login-container img {
+  width: 100px;
+  height: 150px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Login Form */
+.login-form {
+  width: 50%;
+  max-width: 200px;
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #0066cc;
+  font-size: 24px;
+}
+
+.login-form p.msg {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: red;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  display: block;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  width: 100%;
+  background: #eef4ff;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #0066cc;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0,102,204,0.3);
+}
+
+button {
+  padding: 12px;
+  background: #aa6fde;
+  color: #d209f5;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background: #dadddb;
+  transform: scale(1.05);
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.signup-link a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 20px;
+  }
+
+  .login-container img {
+    width: 180px;
+  }
+}
+  
