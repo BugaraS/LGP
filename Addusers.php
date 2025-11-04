@@ -92,7 +92,7 @@
         </div>
 
         <footer>
-            &copy; 2025 DBU. All rights reserved.
+            &copy; 2025 DBU. All rights reservedddd.
         </footer>
     </div>
 </div>
