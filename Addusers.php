@@ -14,7 +14,7 @@
         if ($_SERVER['REQUEST_METHOD'] == "POST") {
             $fullname  = $_POST['fullname'];
             $username_input = $_POST['username'];
-            $password_input = password_hash($_POST['password'], PASSWORD_BCRYPT); // Secure hash
+            $password_input = password_hash($_POST['password'], PASSWORD_BCRYPT); 
             $email = $_POST['email'];
             $phone = $_POST['phone'];
             $position = $_POST['position'];
