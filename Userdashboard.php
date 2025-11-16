@@ -86,7 +86,7 @@ $other_count = getCount($conn, 'others');
                 <a href="language_switch.php?lang=am">አማርኛ</a>
             </div>
         </header>
-vdfgdfg
+
         <div class="content">
             <div class="stats">
                 <div onclick="location.href='Staff_registrations.php'">
