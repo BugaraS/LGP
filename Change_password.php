@@ -53,7 +53,7 @@ $t = $texts[$lang];
 
 $msg = "";
 
-// ========== FORM SUBMISSION ==========
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $old = $_POST['old_password'];
     $new = $_POST['new_password'];
