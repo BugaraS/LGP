@@ -69,7 +69,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
         <a href="logout.php"><i class="fas fa-sign-out-alt"></i> Logout</a>
     </div>
 
-    <!-- Main Section -->
+    <!--This IS  Main Section -->
     <div class="main">
 
         <header>
